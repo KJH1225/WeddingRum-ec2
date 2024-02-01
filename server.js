@@ -38,25 +38,20 @@ app.use(express.json());
 
 // 브라우저 cors 이슈를 막기 위해 사용(모든 브라우저의 요청을 일정하게 받겠다)
 var cors = require('cors');
-app.use(cors(
-  // {
-  //   origin: '*',
-  //   credential: 'true', // 사용자 인증이 필요한 리소스(쿠키 ..등) 접근
-  // }
-));
+app.use(cors());
 
 //포트는 .env파일의 PORT로 설정한 값
 app.set('port', process.env.PORT);
 
 //{API}/user 로 접속하면  userRouter 를 실행
-app.use('/user', userRouter);
-app.use('/faq', faqRouter);
-app.use('/products', productRouter);
-app.use('/reservation', reservationRouter);
-app.use('/hall',hallRouter);
-app.use('/planner',plannerRouter);
-app.use('/refresh', refresh);
-app.get('/logout', (req, res) => {
+app.use('/app3/api/user', userRouter);
+app.use('/app3/api/faq', faqRouter);
+app.use('/app3/api/products', productRouter);
+app.use('/app3/api/reservation', reservationRouter);
+app.use('/app3/api/hall',hallRouter);
+app.use('/app3/api/planner',plannerRouter);
+app.use('/app3/api/refresh', refresh);
+app.get('/app3/api/logout', (req, res) => {
   console.log("logout");
   res.cookie('accessToken',{},{
     httpOnly : true,
@@ -72,13 +67,11 @@ app.get('/logout', (req, res) => {
 })
 // app.use('/mypage')/
 
-app.use(express.static(path.join(__dirname, 'wedingrum/build')));
-// app.get('/', function (req, res) {
+// app.use(express.static(path.join(__dirname, 'wedingrum/build')));
+
+// app.get('*', function (req, res) {
 //   res.sendFile(path.join(__dirname, '/wedingrum/build/index.html'));
 // });
-app.get('*', function (req, res) {
-  res.sendFile(path.join(__dirname, '/wedingrum/build/index.html'));
-});
 
 
 app.listen(app.get('port'), function () { //서버실행

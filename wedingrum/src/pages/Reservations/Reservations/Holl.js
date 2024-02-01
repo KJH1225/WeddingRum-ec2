@@ -1,7 +1,7 @@
 import React from 'react';
-import './Date.scss'
-// import { NavLink } from "react-router-dom";
 import LeftDate from './leftDate';
+import { API_URL } from '../../../config/contansts';
+import './Date.scss'
 
 const Date4 = () => {
     
@@ -23,7 +23,7 @@ const Date4 = () => {
                             <div className='Hollimg'>
                               <div className='Hollimg2'>
                                 <a className='Hollimgtop'><span></span></a>
-                                <div className='Hollimg3'><div className='Hollimg4'><img src='img/Reservations/52.png'></img></div></div>
+                                <div className='Hollimg3'><div className='Hollimg4'><img src={API_URL +'/img/Reservations/52.png'}></img></div></div>
                                 <a className='Hollimgbottom'>예약하기</a>
                               </div>
                               <div className='Holltext'>

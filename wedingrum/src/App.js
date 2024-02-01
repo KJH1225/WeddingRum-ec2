@@ -5,7 +5,6 @@ import Main from './pages/Main/Main';
 import Footer from './components/Footer/Footer';
 import MyPage from './pages/Mypage/Mypage';
 import MyPage2 from './pages/Mypage/Mypage2';
-import './App.css';
 import Exp from './pages/Experience/Exp/Exp';
 import Exp1 from './pages/Experience/Exp1/Exp1';
 import Exp2 from './pages/Experience/Exp2/Exp2';
@@ -31,6 +30,7 @@ import Holl from './pages/Reservations/Reservations/Holl';
 import Ceremony from './pages/Reservations/Information';
 import Customer from './pages/Customer/Customer';
 import Theme from './pages/Reservations/Reservations/Theme';
+import './App.css';
 
 function App() {
   return (

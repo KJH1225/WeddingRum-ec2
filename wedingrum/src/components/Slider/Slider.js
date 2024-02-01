@@ -2,10 +2,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import '../Slider/Slider.scss';
 
 const images = [
-  '../img/main/1.jpg',
-  '../img/main/2.jpg',
-  '../img/main/3.jpg',
-  '../img/main/4.jpg',
+  '/img/main/1.jpg',
+  '/img/main/2.jpg',
+  '/img/main/3.jpg',
+  '/img/main/4.jpg',
   // 추가 이미지를 필요에 따라 계속해서 추가하세요
 ];
 
@@ -38,7 +38,7 @@ const AutoImageSlider = ({ onNextSlide }) => {
     <div className="slider-container">
       <div ref={sliderRef} className="slider" style={slideStyle}>
         {images.map((image, index) => (
-          <div key={index} className={`slide ${index === currentIndex ? 'active' : ''}`} style={{ backgroundImage: `url(${image})` }}></div>
+          <div key={index} className={`slide ${index === currentIndex ? 'active' : ''}`} style={{ backgroundImage: `url(/app3${image})` }}></div>
         ))}
       </div>
     </div>

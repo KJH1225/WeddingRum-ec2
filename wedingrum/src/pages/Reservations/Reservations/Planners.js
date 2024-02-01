@@ -17,7 +17,7 @@ const Date4 = () => {
   const [planners, setPlanners] = useState([]);
 
   useEffect(()=>{
-    axios.get(`${API_URL}/planner?point=${point}`)
+    axios.get(`${API_URL}/api/planner?point=${point}`)
       .then(res => {
         setPlanners(res.data)
         console.log(res.data);
@@ -27,7 +27,7 @@ const Date4 = () => {
   },[])
 
   const handleReservationClick = () => {
-    axios.post(`${API_URL}/reservation`, {plannerId, point, date, time, contactChoice, theme})
+    axios.post(`${API_URL}/api/reservation`, {plannerId, point, date, time, contactChoice, theme})
       .then(res => {
         console.log(res);
         alert("예약 성공");
@@ -69,7 +69,7 @@ const Date4 = () => {
                   <div className="day-of-week-selector-container22">
                     {planners.map(planner => (
                       <div key={planner.name} className="days-of-week">
-                          <img src={`${planner.profileImgUrl}`} alt={'사진'} />
+                          <img src={API_URL + planner.profileImgUrl} alt={'사진'} />
                           <div className='proname'>
                             <h1><span>{planner.name}</span></h1>
                             <h2><span>{planner.phone}</span></h2>

@@ -1,8 +1,9 @@
-import "../Party/Party.scss"
 import React from "react"
 import Swiper from "../../components/Swiper/Swiper";
 import Multi from "../../components/Mcarousel/Mcarousel";
 import Vswiper from "../../components/Vswiper/Vswiper";
+import { API_URL } from "../../config/contansts";
+import "../Party/Party.scss"
 
 const Party = () => {
   return (
@@ -10,7 +11,7 @@ const Party = () => {
     <div className="Psub_inner">
       <div className="party_main">
         <div className="party_main_img">
-          <img src="img//Party/p1.jpg"></img>
+          <img src={API_URL +"/img//Party/p1.jpg"}></img>
         </div>
         <div className="party_main_txt">          
           <h3>PARTY</h3>

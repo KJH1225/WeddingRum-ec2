@@ -5,6 +5,7 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './Aswiper.scss'
+import { API_URL } from '../../config/contansts';
 
 export default function Aswiper(){
     return(
@@ -41,7 +42,7 @@ export default function Aswiper(){
               </p>
             </div>
             <div className="Aimg">
-              <img src="img/About/ast1.jpg" />
+              <img src={API_URL +"/img/About/ast1.jpg"} />
             </div>            
             </SwiperSlide>
           <SwiperSlide>
@@ -62,7 +63,7 @@ export default function Aswiper(){
               </p>
             </div>
             <div className="Aimg">
-              <img src="img/About/ast2.jpg"/>
+              <img src={API_URL +"/img/About/ast2.jpg"}/>
             </div>
             </SwiperSlide>
           <SwiperSlide>
@@ -84,7 +85,7 @@ export default function Aswiper(){
               </p>
             </div>
             <div className="Aimg">
-              <img src="img/About/ast3.jpg"/>
+              <img src={API_URL +"/img/About/ast3.jpg"}/>
             </div>
             </SwiperSlide>
           <SwiperSlide>
@@ -106,7 +107,7 @@ export default function Aswiper(){
               </p>
             </div>
             <div className="Aimg">
-              <img src="img/About/ast4.jpg"/>
+              <img src={API_URL +"/img/About/ast4.jpg"}/>
             </div>
             </SwiperSlide>
           <SwiperSlide>
@@ -127,7 +128,7 @@ export default function Aswiper(){
               </p>
             </div>
             <div className="Aimg">
-              <img src="img/About/ast5.jpg"/>
+              <img src={API_URL +"/img/About/ast5.jpg"}/>
             </div>
             </SwiperSlide>
           <SwiperSlide>
@@ -146,7 +147,7 @@ export default function Aswiper(){
               </p>
             </div>
             <div className="Aimg">
-              <img src="img/About/ast6.jpg"/>
+              <img src={API_URL +"/img/About/ast6.jpg"}/>
             </div>
             </SwiperSlide>
         </Swiper>

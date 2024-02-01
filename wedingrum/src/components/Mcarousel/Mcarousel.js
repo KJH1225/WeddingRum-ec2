@@ -9,7 +9,7 @@ export default function App() {
   const [halls,setHalls] = useState([]);
 
   useEffect(()=> {
-    axios.get(`${API_URL}/hall`)
+    axios.get(`${API_URL}/api/hall`)
     .then(res => {
       setHalls(res.data);
       console.log(res.data);
@@ -42,7 +42,7 @@ export default function App() {
         <Carousel responsive={responsive}>
           {halls.map(hall =>
             <div>
-              <img src={hall.hallImg}/>
+              <img src={API_URL + hall.hallImg}/>
               <h3>{hall.hallName}</h3>
               <p>수용인원 {hall.Capacity}명. 주차가능 {hall.ParkingCapacity}</p>
             </div>

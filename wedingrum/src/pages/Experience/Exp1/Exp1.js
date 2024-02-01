@@ -6,6 +6,7 @@
 import React from "react";
 import './Exp1.scss';
 import { NavLink } from "react-router-dom";
+import { API_URL } from "../../../config/contansts";
 
 const Exp1 = () => {
   const temp = {
@@ -61,7 +62,7 @@ const Exp1 = () => {
           <div class="exp1-3-3">
             <ul>
               <li>
-                <img src="/image/Exp/Exp1/background-3078335_640.jpg"></img>
+                <img src={API_URL +"/image/Exp/Exp1/background-3078335_640.jpg"}></img>
                 <div>
                   <h3>{temp.exp1_3_3_1_h3}</h3>
                   <p>{temp.exp1_3_3_1_p}
@@ -70,14 +71,14 @@ const Exp1 = () => {
               </li>
               <li>
                 
-                <img src="/image/Exp/Exp1/bokeh-2330583_640.jpg"></img>
+                <img src={API_URL +"/image/Exp/Exp1/bokeh-2330583_640.jpg"}></img>
                 <div>
                   <h3>{temp.exp1_3_3_2_h3}</h3>
                   <p>{temp.exp1_3_3_2_p}</p>
                 </div>
               </li>
               <li>
-                <img src="/image/Exp/Exp1/balloons-3159417_640.jpg"></img>
+                <img src={API_URL +"/image/Exp/Exp1/balloons-3159417_640.jpg"}></img>
                 <div>
                   <h3>{temp.exp1_3_3_3_h3}</h3>
                   <p>{temp.exp1_3_3_3_p}</p>

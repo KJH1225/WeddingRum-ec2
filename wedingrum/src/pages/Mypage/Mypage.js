@@ -23,7 +23,7 @@ function MyPage() {
   });
   const getUser = async () =>{
     console.log("Mypage.js/getUser()들어옴");
-    const user = await axios.get(`${API_URL}/user/mypage`);
+    const user = await axios.get(`${API_URL}/api/user/mypage`);
     console.log("Mypage.js/getUser(): ", user.status);
     return user.data;
   }

@@ -2,6 +2,7 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./Amcarousel.scss";
+import { API_URL } from "../../config/contansts";
 
 export default function App() {
   const responsive = {
@@ -26,7 +27,7 @@ export default function App() {
     <div className="App2">
       <div style={{ position: "relative" }}>
         <Carousel responsive={responsive}>
-          <div><img src="img/About/amt1.jpg"/>
+          <div><img src={API_URL +"/img/About/amt1.jpg"} />
           <h2>
             A Moment to<br/>
             Treasure Forever
@@ -43,7 +44,7 @@ export default function App() {
             스타일이 탄생합니다.
           </p>          
           </div>
-          <div><img src="img/About/amt2.jpg"/>
+          <div><img src={API_URL +"/img/About/amt2.jpg"} />
             <h2>
               A Delightful Feast to<br/>
               Give Thankds
@@ -60,7 +61,7 @@ export default function App() {
               즐기는 신랑신부의 탁월한 취향으로 기억될 것입니다.
             </p>
           </div>
-          <div><img src="img/About/amt3.jpg"/>
+          <div><img src={API_URL +"/img/About/amt3.jpg"} />
             <h2>
               Make a<br/>
               Great Difference

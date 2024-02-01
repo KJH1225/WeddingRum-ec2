@@ -1,7 +1,7 @@
-import "../About1/About1.scss"
 import React from "react"
 import { Link } from 'react-router-dom';
-import About from '../About/About.js';
+import { API_URL } from "../../../config/contansts";
+import "../About1/About1.scss"
 
 const About1 = () => {
   return (
@@ -9,7 +9,7 @@ const About1 = () => {
     <div className="A1sub_inner">
       <div className="about1_main">
         <div className="about1_main_img">
-          <img src="img/About/abt1.jpg"></img>
+          <img src={API_URL +"/img/About/abt1.jpg"}></img>
         </div>
         <div className="about1_main_txt">          
           <h3>About</h3>
@@ -26,7 +26,7 @@ const About1 = () => {
           </a>
         </div>
         <div className="A1bigimg">
-          <img src="img/About/abt2.jpg"/>
+          <img src={API_URL +"/img/About/abt2.jpg"}/>
         </div>
         <div className="A1maintxt">
           <div className="left">
@@ -63,10 +63,10 @@ const About1 = () => {
         </div>
         <div className="A1iden">
           <div className="imgleft">
-            <img src="img/About/ab3.png"></img>
+            <img src={API_URL +"/img/About/ab3.png"}></img>
           </div>
           <div className="imgright">
-            <img src="img/About/ab4.png"></img>
+            <img src={API_URL +"/img/About/ab4.png"}></img>
           </div>          
         </div> 
         <div className="A1bottom">          
@@ -76,14 +76,14 @@ const About1 = () => {
               <h1>Our Brand</h1>  
             </div>
             <div className="innerimg">
-              <img src="./img/About/ab13.png"></img>
-              <img src="./img/About/ab13.png"></img>
-              <img src="./img/About/ab13.png"></img>
-              <img src="./img/About/ab13.png"></img>
-              <img src="./img/About/ab13.png"></img>
-              <img src="./img/About/ab13.png"></img>
-              <img src="./img/About/ab13.png"></img>
-              <img src="./img/About/ab13.png"></img>
+              <img src={API_URL +"/img/About/ab13.png"}></img>
+              <img src={API_URL +"/img/About/ab13.png"}></img>
+              <img src={API_URL +"/img/About/ab13.png"}></img>
+              <img src={API_URL +"/img/About/ab13.png"}></img>
+              <img src={API_URL +"/img/About/ab13.png"}></img>
+              <img src={API_URL +"/img/About/ab13.png"}></img>
+              <img src={API_URL +"/img/About/ab13.png"}></img>
+              <img src={API_URL +"/img/About/ab13.png"}></img>
             </div>  
           </div>          
         </div>       

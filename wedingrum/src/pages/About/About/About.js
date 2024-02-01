@@ -6,6 +6,8 @@ import Multi from "../../../components/Amcarousel/Amcarousel";
 import ImageGal from '../../../components/imggal/imghover2'
 import { Link } from 'react-router-dom';
 import About1 from '../About1/About1';
+import { API_URL } from "../../../config/contansts";
+
 
 const About = () => {
   return (
@@ -13,7 +15,7 @@ const About = () => {
     <div className="Asub_inner">
       <div className="about_main">
         <div className="about_main_img">
-          <img src="img/About/at1.jpg"></img>
+          <img src={API_URL + "/img/About/at1.jpg"}></img>
         </div>
         <div className="about_main_txt">          
           <h3>About</h3>
@@ -34,7 +36,7 @@ const About = () => {
         </p>
         <div className="Asubimg_wrap">
           <div className="Asubimg">
-            <img src="img/About/at2.jpg"></img>
+            <img src={API_URL + "/img/About/at2.jpg"}></img>
           </div>
           <div className="Asubtxt">
             <h2>Create Your Once<br/>in a lifetime Moment</h2>

@@ -21,7 +21,7 @@ const ProdDetail = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`${API_URL}/products/detail/${id}`);
+        const response = await axios.get(`${API_URL}/api/products/detail/${id}`);
         if (!response.data || response.data.error) {
           console.error('확실히 문제가 있어.');
           return;
@@ -57,7 +57,7 @@ const ProdDetail = () => {
   return (
     <div className="detail-container">
       <div className="image-container">
-        <img src={selectedImage} alt="Product" />
+        <img src={API_URL + selectedImage} alt="Product" />
         <div className="image-overlay">
           {Array.isArray(galleryImages) &&
             galleryImages.map((image, index) => (
@@ -66,7 +66,7 @@ const ProdDetail = () => {
                 className={`thumbnail ${selectedImage === image ? 'active' : ''}`}
                 onClick={() => handleThumbnailClick(image)}
               >
-                <img src={image} alt={`Thumbnail ${index + 1}`} />
+                <img src={API_URL + image} alt={`Thumbnail ${index + 1}`} />
               </div>
             ))
           }

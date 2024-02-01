@@ -1,10 +1,11 @@
-import "../Main/Main.scss";
 import { useEffect, useRef, useState } from 'react';
 import MapWithRealtimeLocation from '../../components/Map/Map'
 import AutoImageSlider from '../../components/Slider/Slider';
 import ImageGallery from '../../components/Main4/imghover';
 import ScrollToTopButton from '../../components/TopButton/TopButton'
 import { NavLink } from "react-router-dom";
+import { API_URL } from "../../config/contansts";
+import "../Main/Main.scss";
 
 const Main = () => {
   const sliderRef = useRef(null);
@@ -31,7 +32,7 @@ const Main = () => {
     <>
       <div className="bg-video">
         <video className="bg-video__content" autoPlay muted loop>
-          <source src="../MAIN.mp4" type="video/mp4" />
+          <source src={API_URL +"/MAIN.mp4"} type="video/mp4" />
           Your browser is not supported!
         </video>
       </div>

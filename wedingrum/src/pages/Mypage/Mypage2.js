@@ -10,7 +10,7 @@ function MyPage2() {
   const [reservationPlanner, setReservationPlanner] = useState([]);
 
   useEffect(()=>{
-    axios.get(`${API_URL}/reservation`)
+    axios.get(`${API_URL}/api/reservation`)
     .then(res => {
       console.log("MyPage2/res: ",res.data.Planner.name);
       setReservation(res.data);

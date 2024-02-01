@@ -5,6 +5,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import { NavLink } from "react-router-dom";
+import { API_URL } from "../../config/contansts";
 
 const Footer = () => {
 
@@ -23,7 +24,7 @@ const Footer = () => {
         </div>
       <div className="footer-content">
           <div className="footer-section">
-            <NavLink to=''><img src="./img/header/logo.png" alt=""></img></NavLink>
+            <NavLink to=''><img src={API_URL +"/img/header/logo.png"} alt=""></img></NavLink>
           </div>
           <div className="footer-section">
             <h2>회사 정보</h2>

@@ -1,15 +1,10 @@
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
+import { Pagination, Navigation } from 'swiper/modules';
+import { API_URL } from '../../config/contansts';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
-
-// import required modules
-import { Pagination, Navigation } from 'swiper/modules';
 
 export default function Vswiper() {
   return (
@@ -25,10 +20,10 @@ export default function Vswiper() {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide><img src="./img/Party/vt1.jpg"/></SwiperSlide>
-        <SwiperSlide><img src="./img/Party/vt2.jpg"/></SwiperSlide>
-        <SwiperSlide><img src="./img/Party/vt3.jpg"/></SwiperSlide>
-        <SwiperSlide><img src="./img/Party/vt4.jpg"/></SwiperSlide>
+        <SwiperSlide><img src={API_URL +"/img/Party/vt1.jpg"}/></SwiperSlide>
+        <SwiperSlide><img src={API_URL +"/img/Party/vt2.jpg"}/></SwiperSlide>
+        <SwiperSlide><img src={API_URL +"/img/Party/vt3.jpg"}/></SwiperSlide>
+        <SwiperSlide><img src={API_URL +"/img/Party/vt4.jpg"}/></SwiperSlide>
       </Swiper>
     </>
   );

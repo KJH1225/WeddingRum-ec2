@@ -3,8 +3,9 @@
 */
 
 import React from "react";
-import './Exp2.scss';
 import { NavLink } from "react-router-dom";
+import { API_URL } from "../../../config/contansts";
+import './Exp2.scss';
 
 const Exp2 = () => {
     const temp = {
@@ -60,21 +61,21 @@ const Exp2 = () => {
           <div class="exp1-3-3">
             <ul>
               <li>
-                <img src="/image/Exp/Exp2/cook-2364221_640.jpg"></img>
+                <img src={API_URL +"/image/Exp/Exp2/cook-2364221_640.jpg"}></img>
                 <div>
                   <h3>{temp.exp1_3_3_1_h3}</h3>
                   <p>{ temp.exp1_3_3_1_p}</p>
                 </div>
               </li>
               <li>
-                <img src="/image/Exp/Exp2/pasta-3547078_640.jpg"></img>
+                <img src={API_URL +"/image/Exp/Exp2/pasta-3547078_640.jpg"}></img>
                 <div>
                   <h3>{ temp.exp1_3_3_2_h3}</h3>
                   <p>{temp.exp1_3_3_2_p}</p>
                 </div>
               </li>
               <li>
-                <img src="/image/Exp/Exp2/asparagus-2178164_640.jpg"></img>
+                <img src={API_URL +"/image/Exp/Exp2/asparagus-2178164_640.jpg"}></img>
                 <div>
                   <h3>{temp.exp1_3_3_3_h3}</h3>
                   <p>{temp.exp1_3_3_3_p}</p>

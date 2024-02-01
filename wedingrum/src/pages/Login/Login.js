@@ -16,7 +16,7 @@ const Login = () => {
         console.log("id: ", id);
         console.log("pwd: ", pwd);
         const res = await axios.post(
-            `${API_URL}/user/login`, 
+            `${API_URL}/api/user/login`, 
             {id, pwd},
             { withCredentials: true },
             // { profile: { id, pwd } }, 

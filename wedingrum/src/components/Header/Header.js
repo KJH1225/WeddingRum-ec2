@@ -13,21 +13,8 @@ const Header = () => {
   // const login = getCookie('accessToken');
   console.log("login: ", isLogin);
 
-  // const refresh = async () => {
-  //   try {
-  //     const res = await axios.get(
-  //       `${API_URL}/refresh`,
-  //       { withCredentials: true },
-  //     );
-  //     console.log(res);
-  //   } catch (error) {
-  //     console.log("Header.js/error.res: ", error.response);
-  //     navigate('/login')
-  //   }
-  // }
-
   const logout = async () => {
-    axios.get(`${API_URL}/logout`, { withCredentials: true })
+    axios.get(`${API_URL}/api/logout`, { withCredentials: true })
       .then(()=>{
         setIsLogin(false);
       })
@@ -57,7 +44,7 @@ const Header = () => {
       onMouseEnter={() => setIsHeaderHovered(true)}
       onMouseLeave={() => setIsHeaderHovered(false)}>
       <div className='header-warp'>
-        <NavLink to='/'><img src='./img/header/logo.png' alt=''></img></NavLink>
+        <NavLink to='/'><img src={API_URL +'/img/header/logo.png'} alt=''></img></NavLink>
         <div className='header-item'>
           <ul>
             <li>

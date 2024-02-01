@@ -10,7 +10,7 @@ const Customer = () => {
   const [searchT, setSearchT] = useState(''); // 검색어
 
   useEffect(() => { // FAQ 데이터를 불러오기 위한 useEffect
-    axios.get(`${API_URL}/faq`)
+    axios.get(`${API_URL}/api/faq`)
       .then(response => {
         //console.log("response:",response);
         setCategories(response.data); // FAQ 데이터 설정

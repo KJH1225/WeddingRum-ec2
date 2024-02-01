@@ -88,20 +88,20 @@ CREATE TABLE IF NOT EXISTS `planners` (
 -- 테이블 데이터 wedingrumdb.planners:~15 rows (대략적) 내보내기
 INSERT INTO `planners` (`id`, `pwd`, `profileImgUrl`, `point`, `name`, `phone`, `introduction`, `regdate`) VALUES
 	('asd', 'asd', '/image/Reservation/planner/planner.jpg', '잠실점', '카리나', '010-1111-2222', '안녕하세요 카리나 입니다.', '2023-11-22 00:00:00'),
-	('asd1', 'asd1', '/image/Reservation/planner/planner1.jpg', '잠실점', '김일', '010-1111-2222', '안녕하세요 김일 입니다.', '2023-11-22 00:00:00'),
-	('asd10', 'asd10', '/image/Reservation/planner/planner10.jpg', '선릉점', '김십', '010-1111-2222', '안녕하세요 김십 입니다.', '2023-11-22 00:00:00'),
-	('asd11', 'asd11', '/image/Reservation/planner/planner11.jpg', '선릉점', '김십일', '010-1111-2222', '안녕하세요 김십일 입니다.', '2023-11-22 00:00:00'),
-	('asd12', 'asd12', '/image/Reservation/planner/planner12.jpg', '공덕점', '김십이', '010-1111-2222', '안녕하세요 김십이 입니다.', '2023-11-22 00:00:00'),
-	('asd13', 'asd13', '/image/Reservation/planner/planner13.jpg', '공덕점', '김십삼', '010-1111-2222', '안녕하세요 김십삼 입니다.', '2023-11-22 00:00:00'),
-	('asd14', 'asd14', '/image/Reservation/planner/planner14.jpg', '공덕점', '김십사', '010-1111-2222', '안녕하세요 김십사 입니다.', '2023-11-22 00:00:00'),
-	('asd2', 'asd2', '/image/Reservation/planner/planner2.jpg', '잠실점', '김이', '010-1111-2222', '안녕하세요 김이 입니다.', '2023-11-22 00:00:00'),
-	('asd3', 'asd3', '/image/Reservation/planner/planner3.jpg', '반포점', '김삼', '010-1111-2222', '안녕하세요 김삼 입니다.', '2023-11-22 00:00:00'),
-	('asd4', 'asd4', '/image/Reservation/planner/planner4.jpg', '반포점', '김사', '010-1111-2222', '안녕하세요 김사 입니다.', '2023-11-22 00:00:00'),
-	('asd5', 'asd5', '/image/Reservation/planner/planner5.jpg', '반포점', '김오', '010-1111-2222', '안녕하세요 김오 입니다.', '2023-11-22 00:00:00'),
-	('asd6', 'asd6', '/image/Reservation/planner/planner6.jpg', '평택점', '김육', '010-1111-2222', '안녕하세요 김육 입니다.', '2023-11-22 00:00:00'),
-	('asd7', 'asd7', '/image/Reservation/planner/planner7.jpg', '평택점', '김칠', '010-1111-2222', '안녕하세요 김칠 입니다.', '2023-11-22 00:00:00'),
-	('asd8', 'asd8', '/image/Reservation/planner/planner8.jpg', '평택점', '김팔', '010-1111-2222', '안녕하세요 김팔 입니다.', '2023-11-22 00:00:00'),
-	('asd9', 'asd9', '/image/Reservation/planner/planner9.jpg', '선릉점', '김구', '010-1111-2222', '안녕하세요 김구 입니다.', '2023-11-22 00:00:00');
+	('asd1', 'asd1', '/image/Reservation/planner/planner15.jpg', '잠실점', '이지은 ', '010-5821-2658', '안녕하세요 이지은 입니다.', '2023-11-22 00:00:00'),
+	('asd10', 'asd10', '/image/Reservation/planner/planner10.jpg', '선릉점', '김서연', '010-4572-6351', '안녕하세요 김서연 입니다.', '2023-11-22 00:00:00'),
+	('asd11', 'asd11', '/image/Reservation/planner/planner11.jpg', '선릉점', '박은서', '010-2572-2375', '안녕하세요 박은서 입니다.', '2023-11-22 00:00:00'),
+	('asd12', 'asd12', '/image/Reservation/planner/planner12.jpg', '공덕점', '최민지', '010-3126-4421', '안녕하세요 최민지 입니다.', '2023-11-22 00:00:00'),
+	('asd13', 'asd13', '/image/Reservation/planner/planner13.jpg', '공덕점', '김하은', '010-1234-7872', '안녕하세요 김하은 입니다.', '2023-11-22 00:00:00'),
+	('asd14', 'asd14', '/image/Reservation/planner/planner14.jpg', '공덕점', '정유진', '010-1447-9435', '안녕하세요 정유진 입니다.', '2023-11-22 00:00:00'),
+	('asd2', 'asd2', '/image/Reservation/planner/planner2.jpg', '잠실점', '송지윤', '010-6752-8461', '안녕하세요 송지윤 입니다.', '2023-11-22 00:00:00'),
+	('asd3', 'asd3', '/image/Reservation/planner/planner3.jpg', '반포점', '이준호', '010-6481-3764', '안녕하세요 이준호 입니다.', '2023-11-22 00:00:00'),
+	('asd4', 'asd4', '/image/Reservation/planner/planner4.jpg', '반포점', '박성우', '010-9461-5731', '안녕하세요 박성우 입니다.', '2023-11-22 00:00:00'),
+	('asd5', 'asd5', '/image/Reservation/planner/planner5.jpg', '반포점', '최현우', '010-6481-3761', '안녕하세요 최현우 입니다.', '2023-11-22 00:00:00'),
+	('asd6', 'asd6', '/image/Reservation/planner/planner6.jpg', '평택점', '김태민', '010-8267-9157', '안녕하세요 김태민 입니다.', '2023-11-22 00:00:00'),
+	('asd7', 'asd7', '/image/Reservation/planner/planner7.jpg', '평택점', '박지훈', '010-5761-4682', '안녕하세요 박지훈 입니다.', '2023-11-22 00:00:00'),
+	('asd8', 'asd8', '/image/Reservation/planner/planner8.jpg', '평택점', '윤서현', '010-6528-7316', '안녕하세요 윤서현 입니다.', '2023-11-22 00:00:00'),
+	('asd9', 'asd9', '/image/Reservation/planner/planner9.jpg', '선릉점', '강미라', '010-5679-5673', '안녕하세요 강미라 입니다.', '2023-11-22 00:00:00');
 
 -- 테이블 wedingrumdb.points 구조 내보내기
 CREATE TABLE IF NOT EXISTS `points` (

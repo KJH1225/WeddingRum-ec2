@@ -1,12 +1,13 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import './Wedding.scss';
 import MapWithRealtimeLocation from '../../components/Map/Map'
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import {NavLink, useParams} from 'react-router-dom';
+import { API_URL } from '../../config/contansts';
+import './Wedding.scss';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import {NavLink, useParams} from 'react-router-dom';
 
 
 function Wedding() {
@@ -234,7 +235,7 @@ function Wedding() {
         <div class="contents_header">
           <div class="back-image" 
             style={{
-            backgroundImage: `url(${weddings.back_img})`
+            backgroundImage: `url(/app3${weddings.back_img})`
             }}>
             <div class="big_tit">
               <h3>WEDDING</h3>
@@ -270,7 +271,7 @@ function Wedding() {
     
             <div class="center_third"
               style={{
-                backgroundImage: `url(${weddings.information_img})`,
+                backgroundImage: `url(/app3${weddings.information_img})`,
                 }}
               >
               <div id="nemo">
@@ -299,15 +300,15 @@ function Wedding() {
                   modules={[Autoplay, Pagination, Navigation]}
                   className="mySwiper"
                 >
-                  <SwiperSlide><img src={weddings.SwiperSlide1}/></SwiperSlide>
-                  <SwiperSlide><img src={weddings.SwiperSlide2}/></SwiperSlide>
-                  <SwiperSlide><img src={weddings.SwiperSlide3}/></SwiperSlide>
-                  <SwiperSlide><img src={weddings.SwiperSlide4}/></SwiperSlide>
-                  <SwiperSlide><img src={weddings.SwiperSlide5}/></SwiperSlide>
-                  <SwiperSlide><img src={weddings.SwiperSlide6}/></SwiperSlide>
-                  <SwiperSlide><img src={weddings.SwiperSlide7}/></SwiperSlide>
-                  <SwiperSlide><img src={weddings.SwiperSlide8}/></SwiperSlide>
-                  <SwiperSlide><img src={weddings.SwiperSlide9}/></SwiperSlide>
+                  <SwiperSlide><img src={API_URL + weddings.SwiperSlide1}/></SwiperSlide>
+                  <SwiperSlide><img src={API_URL + weddings.SwiperSlide2}/></SwiperSlide>
+                  <SwiperSlide><img src={API_URL + weddings.SwiperSlide3}/></SwiperSlide>
+                  <SwiperSlide><img src={API_URL + weddings.SwiperSlide4}/></SwiperSlide>
+                  <SwiperSlide><img src={API_URL + weddings.SwiperSlide5}/></SwiperSlide>
+                  <SwiperSlide><img src={API_URL + weddings.SwiperSlide6}/></SwiperSlide>
+                  <SwiperSlide><img src={API_URL + weddings.SwiperSlide7}/></SwiperSlide>
+                  <SwiperSlide><img src={API_URL + weddings.SwiperSlide8}/></SwiperSlide>
+                  <SwiperSlide><img src={API_URL + weddings.SwiperSlide9}/></SwiperSlide>
                 </Swiper>
               </div>
             </div>
@@ -331,7 +332,7 @@ function Wedding() {
 
         <div class="foooter backimg03"
           style={{
-            backgroundImage: `url(${weddings.footer_img})`
+            backgroundImage: `url(/app3${weddings.footer_img})`
             }}
           >
           <div class="backblack">
